@@ -4,7 +4,8 @@ from flask import Flask, render_template, request
 import pickle
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 #import Ridge and Standard Scaler pickle files
 ridge_model = pickle.load(open('ridge.pkl','rb'))
